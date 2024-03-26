@@ -1,3 +1,4 @@
+// ContactList.jsx
 import { selectNameFilter } from "../../redux/filtersSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contactsSlice";
@@ -14,7 +15,6 @@ const ContactList = () => {
   );
 
   const handleDeleteContact = (id) => {
-    console.log(id);
     dispatch(deleteContact(id));
   };
 
@@ -23,9 +23,10 @@ const ContactList = () => {
       {filteredContacts.map((contact) => (
         <li key={contact.id} className={css.item}>
           <Contact
+            id={contact.id} // Передаємо id контакту
             name={contact.name}
             number={contact.number}
-            onDelete={() => handleDeleteContact(contact.id)}
+            onDelete={() => handleDeleteContact(contact.id)} // Викликаємо handleDeleteContact з id контакту
           />
         </li>
       ))}
