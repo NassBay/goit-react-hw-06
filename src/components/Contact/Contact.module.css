@@ -1,0 +1,33 @@
+.container {
+  padding: 10px 20px;
+  border: 1px solid #006d77;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #006d77;
+  background-color: #f7ebec;
+  width: 360px;
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+
+.icon {
+  color: #df7c9b;
+  margin-right: 5px;
+}
+
+.name,
+.number {
+  font-size: 20px;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #df7c9b;
+  font-size: 24px;
+  display: flex;
+  color: #f7ebec;
+  border-radius: 30px;
+}
