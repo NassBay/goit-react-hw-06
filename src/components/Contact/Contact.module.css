@@ -31,3 +31,9 @@
   color: #f7ebec;
   border-radius: 30px;
 }
+
+.button:hover {
+  background-color: #006d77;
+  outline: none;
+  border: 1px solid transparent;
+}
